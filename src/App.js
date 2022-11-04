@@ -1,23 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
+import ReactPlayer from 'react-player/vimeo';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Course Title</h1>
+      <h2>Course Player</h2>
+      <ReactPlayer url='https://vimeo.com/766260846' controls='true'/>
+      <h2>Play List</h2>
     </div>
   );
 }
